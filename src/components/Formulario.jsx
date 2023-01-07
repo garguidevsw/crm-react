@@ -6,7 +6,8 @@ const Formulario = ({cliente}) => {
                     className="text-gray-800"
                     htmlFor="nombre"
                 >Nombre:</label>
-                <input 
+                <input
+                    defaultValue={cliente?.nombre}
                     id="nombre"
                     type="text"
                     className="mt-2 block w-full p-3 bg-gray-50"
@@ -20,6 +21,7 @@ const Formulario = ({cliente}) => {
                     htmlFor="empresa"
                 >Empresa:</label>
                 <input 
+                    defaultValue={cliente?.empresa}
                     id="empresa"
                     type="text"
                     className="mt-2 block w-full p-3 bg-gray-50"
@@ -34,6 +36,7 @@ const Formulario = ({cliente}) => {
                     htmlFor="email"
                 >E-mail:</label>
                 <input 
+                    defaultValue={cliente?.email}
                     id="email"
                     type="email"
                     className="mt-2 block w-full p-3 bg-gray-50"
@@ -48,6 +51,7 @@ const Formulario = ({cliente}) => {
                     htmlFor="telefono"
                 >Teléfono:</label>
                 <input 
+                    defaultValue={cliente?.telefono}
                     id="telefono"
                     type="tel"
                     className="mt-2 block w-full p-3 bg-gray-50"
@@ -62,6 +66,7 @@ const Formulario = ({cliente}) => {
                     htmlFor="notas"
                 >Notas:</label>
                 <textarea
+                    defaultValue={cliente?.notas}
                     as="textarea"
                     id="notas"
                     type="text"
